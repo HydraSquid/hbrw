@@ -1,0 +1,56 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "WanderersGuidetoAeonia",
+				"abbreviation": "WGA",
+				"full": "Wanderer's Guide to Aeonia",
+				"version": "1.0.0",
+				"authors": [
+					"hdru"
+				],
+				"convertedBy": [
+					"hdru"
+				],
+				"color": "8080ff"
+			}
+		],
+		"dateAdded": 1720552837,
+		"dateLastModified": 1720552837
+	},
+	"item": [
+		{
+			"source": "WanderersGuidetoAeonia",
+			"name": "Voodoo Weaver's Tools",
+			"rarity": "uncommon",
+			"weight": 5,
+			"baseItem": "weaver's tools|PHB",
+			"reqAttune": "by a spellcaster",
+			"entries": [
+				"This set of {@item weaver's tools} is specialized for the crafting of effigies—small handcrafted dolls that can be crafted to represent a person or creature. While attuned to this item, you gain proficiency in {@item weaver's tools} and can use this item as a spellcasting focus whether you are holding the kit or one of your effigies.",
+				{
+					"type": "entries",
+					"name": "Sympathetic Magic",
+					"entries": [
+						"You can create any number of effigies as part of a long rest. At any given time, you can have created a number of effigies equal to your proficiency bonus. If you create any more, they are replaced, beginning to disappear from oldest to newest. An effigy must later be linked to an individual creature through the creation of a taglock. The effigy itself is not magical, but its taglock is."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Imitation",
+					"entries": [
+						"As an action, you may attempt to create a taglock that will bind an effigy to a creature. This can be done so long as you possess a substantial piece of that creature, such as a lock of the creature's hair, their fingernails, blood, or a scrap of clothing, all of which are consumed whether or not you succeed. The chosen creature must make a Wisdom saving throw against your spell save DC. On a failed save, the taglock is succesfully created, binding that creature to an effigy. If the effigy is already bound to a creature, its binding is replaced. On a successful save, nothing happens, and you cannot attempt to bind that creature again for the next 24 hours. A willing creature can choose to fail this save. A {@spell dispel magic} or {@spell remove curse} spell ends this effect, destroying the taglock.",
+						"Once given a taglock, an effigy magically changes its appearance to a basic representation of the creature it is bound to, taking on its general shape and colors even if they are not previously known to you."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Correspondence",
+					"entries": [
+						"If the creature bound to an effigy you are holding is within 60 feet of you, whenever you cast a spell with a range of touch, you may instead cast it on your effigy (even if it requires you to target a creature). When you do so, the spell instead targets the bound creature, ignoring any of the spell's usual restrictions on range and sight."
+					]
+				}
+			]
+		}
+	]
+}

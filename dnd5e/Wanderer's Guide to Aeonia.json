@@ -94,11 +94,10 @@
 					"type": "entries",
 					"name": "Shapechanger",
 					"entries": [
-						"You may switch between 3 forms (humanoid, beast, hybrid) twice per long rest. Your creature type remains Fey.",
-						"You are subject to effects that reveal shapechangers. Your beast form is considered your true form.",
+						"You may switch between 3 forms (humanoid, beast, hybrid) twice per long rest. Your beast form is considered your true form. Your creature type remains Fey in all forms.",
 						{
 							"type": "list",
-							"style": "list-hang-notitle",
+							"style": "list-hang",
 							"items": [
 								{
 									"type": "item",
@@ -151,7 +150,7 @@
 							],
 							"colStyles": [
 								"col-2",
-								"col-2",
+								"col-6",
 								"col-6",
 								"col-2",
 								"col-2"
@@ -181,14 +180,14 @@
 								[
 									"Raccoon (Tanuki)",
 									"4 STR, 15 DEX, 13 AC, walk 30 ft, climb 30 ft. Melee 1d4 piercing.",
-									"While in beast or hybrid form, your Darkvision doubles to 120 ft, and you may Hide as a bonus action. You also know the {@spell Elementalism|XPHB} cantrip.",
+									"While in beast or hybrid form you may Hide as a bonus action. You also know the {@spell Elementalism|XPHB} cantrip.",
 									"{@spell Feather Fall|XPHB}",
 									"{@spell Barkskin|XPHB}"
 								],
 								[
 									"Badger (Mujina)",
 									"10 STR, 11 DEX, 11 AC. Walk 20 ft, burrow 5 ft. Melee 1d8 slashing.",
-									"While in hybrid form, you may wear heavy armor, which does not give disadvantage on your stealth checks. You also know the {@spell True Strike|XPHB} cantrip.",
+									"While in hybrid form, you may wear heavy armor, which does not give disadvantage on your Stealth checks. You also know the {@spell True Strike|XPHB} cantrip.",
 									"{@spell Compelled Duel|XPHB}",
 									"{@spell Arcane Vigor|XPHB}"
 								]

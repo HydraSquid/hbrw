@@ -85,11 +85,17 @@
 				},
 				{
 					"type": "entries",
+					"name": "Fey Ancestry",
+					"entries": [
+						"You have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Charmed|XPHB} condition."
+					]
+				},
+				{
+					"type": "entries",
 					"name": "Shapechanger",
 					"entries": [
-						"You have three forms at your disposal: humanoid, beast, and hybrid. The benefits of your beast and hybrid forms are determined by your Bestial Lineage.",
-						"You can change forms twice per long rest. Your creature type is Fey regardless of form.",
-						"You are subject to effects that reveal shapechangers, such as {@spell True Seeing|XPHB} or {@spell Moonbeam|XPHB}. Your beast form is considered your true form for such effects.",
+						"You may switch between 3 forms (humanoid, beast, hybrid) twice per long rest. Your creature type remains Fey.",
+						"You are subject to effects that reveal shapechangers. Your beast form is considered your true form.",
 						{
 							"type": "list",
 							"style": "list-hang-notitle",
@@ -100,9 +106,8 @@
 									"entries": [
 										"Your size becomes Small. You retain your personality, memories, and ability to speak.",
 										"You are able to understand and speak to animals of the same species.",
-										"Your movement speed, Strength, Dexterity, and Armor Class are replaced as determined by your Bestial Lineage.",
-										"You may only attack with your lineage's natural weapons. You are proficient with any weapons granted by your lineage, and you may use your choice of your Strength or Dexterity modifier for the attack and damage rolls.",
-										"You can't use or benefit from any of your equipment or class features.",
+										"Your movement speed, STR, DEX, AC, and attacks are determined by your Bestial Lineage.",
+										"You can't use or benefit from any equipment or class features.",
 										"You can't cast or concentrate on spells unless your lineage states otherwise."
 									]
 								},
@@ -110,9 +115,17 @@
 									"type": "item",
 									"name": "Hybrid Form",
 									"entries": [
-										"Your size becomes Medium. You appear as an animalistic humanoid with distinct beastlike features. You retain your personality, memories, and ability to speak.",
+										"Your size is Medium. You become a humanoid with distinct beastlike features.",
 										"You are able to understand and speak to animals of the same species.",
 										"You are unable to wear heavy armor unless your lineage states otherwise."
+									]
+								},
+								{
+									"type": "item",
+									"name": "Humanoid Form",
+									"entries": [
+										"Your size is Medium. You assume the appearance of a humanoid race of your choice.",
+										"You may decide the form's appearance, but do not gain its languages or racial traits."
 									]
 								}
 							]
@@ -131,7 +144,7 @@
 							"caption": "Bestial Lineages",
 							"colLabels": [
 								"Lineage",
-								"Statistics",
+								"Beast Form, Natural Weapon",
 								"Level 1",
 								"Level 3",
 								"Level 5"
@@ -146,48 +159,41 @@
 							"rows": [
 								[
 									"Fox (Kitsune)",
-									"Your beast form is that of a fox with 2 STR, 16 DEX, and 13 AC. You gain a walk speed of 30 ft and a burrow speed of 5 ft. Your natural weapon is a melee attack that deals 1d4 piercing damage.",
-									"While in beast or hybrid form, you have advantage on perception checks. You also know the {@spell Dancing Lights|XPHB} cantrip, which you can cast and concentrate on while in beast form.",
+									"2 STR, 16 DEX, 13 AC, walk 30 ft, burrow 5 ft. Melee 1d4 piercing",
+									"You can cast cantrips while in beast form. You know the {@spell Dancing Lights|XPHB} cantrip.",
 									"{@spell Faerie Fire|XPHB}",
 									"{@spell Flaming Sphere|XPHB}"
 								],
 								[
 									"Hare (Gyokuto)",
-									"Your beast form is that of a hare with 1 STR, 17 DEX, and 15 AC. You gain a walk speed of 20 ft and a burrow speed of 5 ft. You cannot attack.",
+									"1 STR, 17 DEX, 15 AC, walk 20 ft, burrow 5 ft. Can't attack.",
 									"While in beast or hybrid form, you may Disengage as a bonus action. You also know the {@spell Starry Wisp|XPHB} cantrip.",
 									"{@spell Goodberry|XPHB}",
 									"{@spell Moonbeam|XPHB}"
 								],
 								[
 									"Monkey (Sarugami)",
-									"Your beast form is that of a monkey with 16 STR, 14 DEX, and 12 AC. You gain a walk speed of 30 ft and a climb speed of 30 ft. Your natural weapon is a ranged attack that deals 1d6 bludgeoning damage.",
+									"15 STR, 14 DEX, 12 AC, walk 30 ft, climb 30 ft. Ranged 1d6 bludgeoning.",
 									"While in hybrid form, you gain a climb speed equal to your walk speed. You also know the {@spell Vicious Mockery|XPHB} cantrip.",
 									"{@spell Tasha's Hideous Laughter|XPHB}",
 									"{@spell Blindness/Deafness|XPHB}"
 								],
 								[
 									"Raccoon (Tanuki)",
-									"Your beast form is that of a raccoon with 4 STR, 15 DEX, and 13 AC. You gain a walk speed of 30 ft and a climb speed of 30 ft. Your natural weapon is a melee attack that deals 1d4 piercing damage.",
+									"4 STR, 15 DEX, 13 AC, walk 30 ft, climb 30 ft. Melee 1d4 piercing.",
 									"While in beast or hybrid form, your Darkvision doubles to 120 ft, and you may Hide as a bonus action. You also know the {@spell Elementalism|XPHB} cantrip.",
 									"{@spell Feather Fall|XPHB}",
 									"{@spell Barkskin|XPHB}"
 								],
 								[
 									"Badger (Mujina)",
-									"Your beast form is that of a badger with 10 STR, 11 DEX, and 11 AC. You gain a walk speed of 20 ft and a burrow speed of 5 ft. Your natural weapon is a melee attack that deals 1d8 slashing damage.",
-									"While in hybrid form, you may wear heavy armor and do not have disadvantage on stealth checks from doing so. You also know the {@spell True Strike|XPHB} cantrip.",
+									"10 STR, 11 DEX, 11 AC. Walk 20 ft, burrow 5 ft. Melee 1d8 slashing.",
+									"While in hybrid form, you may wear heavy armor, which does not give disadvantage on your stealth checks. You also know the {@spell True Strike|XPHB} cantrip.",
 									"{@spell Compelled Duel|XPHB}",
 									"{@spell Arcane Vigor|XPHB}"
 								]
 							]
 						}
-					]
-				},
-				{
-					"type": "entries",
-					"name": "Fey Ancestry",
-					"entries": [
-						"You have {@variantrule Advantage|XPHB} on saving throws you make to avoid or end the {@condition Charmed|XPHB} condition."
 					]
 				}
 			]
